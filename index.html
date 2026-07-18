@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Rooster 365 | Roosterplanner voor kleine bedrijven</title>
+    <meta
+      name="description"
+      content="Roosterplanning gedaan in minuten, niet in uren! Met Rooster 365 plan je het rooster van jouw team waar je ook bent. Plan vrije tijd, zieke medewerkers, stel aangepaste werktijden in."
+    />
+    <meta name="theme-color" content="#448AFF" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Rooster 365" />
+    <link rel="apple-touch-icon" href="/icons/icon365-192-ios.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <div class="top-strip" data-top-strip></div>
+
+    <header class="site-header">
+      <svg class="curve-bg" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="curveGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#448aff" />
+            <stop offset="1" stop-color="#3f51b5" />
+          </linearGradient>
+        </defs>
+        <path d="M0,20 Q50,80 100,60 Q150,30 200,40 Q250,40 300,70 Q350,90 400,70 L400,0 L0,0 Z" fill="#448aff" opacity="0.2" />
+        <path d="M0,0 Q50,50 100,70 Q150,80 200,70 Q250,50 300,30 Q350,10 400,90 L400,0 Z" fill="#448aff" opacity="0.5" />
+        <path
+          d="M0,50 Q50,10 100,40 Q150,80 200,80 Q250,80 300,40 Q350,10 400,50 L400,0 Z"
+          fill="url(#curveGradient)"
+        />
+      </svg>
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-logo"><span>R</span></span>
+          <span class="brand-title"><span class="r">R</span><span class="rest">ooster 365</span></span>
+        </a>
+        <div class="header-actions">
+          <a class="btn demo-desktop" href="https://rooster365demo.web.app" target="_blank" rel="noopener">Demoversie</a>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Thema wisselen">☽</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="title">Roosterplanner voor kleine bedrijven</h1>
+          <p class="lead">Roosterplanning gedaan in minuten, niet in uren!
+
+Met Rooster 365 plan je het rooster van jouw team waar je ook bent.</p>
+          <div class="try-row">
+            <span>Probeer nu de online versie</span>
+            <a class="btn" href="https://rooster365demo.web.app" target="_blank" rel="noopener">Demoversie</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="slider">
+            <img src="/images/image_light.png" alt="Rooster 365 schermafbeelding" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="content-row">
+        <div class="body-copy">Plan vrije tijd, zieke medewerkers, stel aangepaste werktijden in.
+
+Download wekelijkse gewerkte uren als pdf-document.
+
+Toegewezen uren per week met toeslagen bekijken. Kijk of medewerkers over hun contracturen heen zijn.
+
+Mogelijkheid om medewerkers van verschillende vestigingen / winkels / filialen op een andere locatie in te plannen.
+
+Medewerkers kunnen hun eigen rooster bekijken in de Rooster 365 web app.</div>
+        <div class="hero-media">
+          <div class="slider">
+            <img src="/images/slider/responsive_light.png" alt="Rooster 365 responsief ontwerp, lichte modus" loading="lazy" />
+            <img src="/images/slider/responsive_dark.png" alt="Rooster 365 responsief ontwerp, donkere modus" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-row">
+        <div class="divider"></div>
+        <div class="mini-logo"><span>R</span></div>
+        <div class="divider"></div>
+      </div>
+
+      <h2 class="section-title">Pakketten vergelijken</h2>
+      <div class="compare-frame">
+        <div data-compare-table></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-strip"></div>
+      <div class="footer-body">
+        <h3>Contact:</h3>
+        <a href="mailto:info@rooster365.nl">info@rooster365.nl</a>
+        <hr class="footer-divider" />
+        <p class="footer-copy">Copyright &copy; <span data-year></span> &nbsp;|&nbsp; Rooster 365</p>
+        <hr class="footer-divider" />
+      </div>
+    </footer>
+
+    <div class="lightbox" data-lightbox>
+      <div class="lightbox-content">
+        <button class="lightbox-close" type="button" data-lightbox-close>Sluiten</button>
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
