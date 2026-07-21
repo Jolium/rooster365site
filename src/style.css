@@ -173,10 +173,6 @@ header.site-header {
   white-space: nowrap;
 }
 
-.brand-title .r {
-  color: var(--brand-yellow);
-}
-
 .brand-title .rest {
   color: var(--text);
 }
@@ -238,116 +234,89 @@ main {
   padding: 32px clamp(16px, 4vw, 5vw);
 }
 
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: clamp(16px, 4vw, 48px);
-}
-
-.hero-text {
-  flex: 1 1 320px;
-}
-
-.hero-media {
-  flex: 1 1 320px;
-  display: flex;
-  justify-content: center;
-}
-
-h1.title {
-  font-size: clamp(28px, 4vw, 34px);
-  font-weight: 700;
-  text-align: center;
-  margin: 0 0 20px;
-}
-
-.lead {
-  text-align: justify;
-  white-space: pre-line;
-  color: var(--text);
-}
-
-.body-copy {
-  text-align: justify;
-  white-space: pre-line;
-  color: var(--text);
-}
-
-.try-row {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin: 16px 0;
-  font-size: 18px;
-}
-
-.content-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: clamp(16px, 4vw, 48px);
-  margin-top: clamp(24px, 4vw, 48px);
-}
-
-.content-row .body-copy {
-  flex: 1 1 320px;
-}
-
-.content-row .hero-media {
-  flex: 1 1 320px;
-}
-
 @media (max-width: 760px) {
-  .try-row {
-    display: flex;
-  }
-
   .header-actions .btn.demo-desktop {
     display: none;
   }
+}
 
-  .hero {
+/* ---------- Features ---------- */
+
+.features {
+  margin-top: clamp(32px, 5vw, 56px);
+}
+
+.feature-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 5vw, 56px);
+  margin: clamp(32px, 5vw, 56px) 0;
+}
+
+.feature-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature-media {
+  flex: 1 1 380px;
+}
+
+.feature-media img {
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  cursor: zoom-in;
+}
+
+.feature-media-compare {
+  display: flex;
+  gap: clamp(12px, 3vw, 24px);
+}
+
+.feature-media-compare figure {
+  flex: 1 1 0;
+  margin: 0;
+  text-align: center;
+}
+
+.feature-media-compare figcaption {
+  margin-top: 8px;
+  font-family: 'Charm', cursive;
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.features-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(24px, 4vw, 40px);
+}
+
+.feature-text {
+  flex: 1 1 320px;
+}
+
+.feature-text h3 {
+  font-family: 'Charm', cursive;
+  font-weight: 400;
+  font-size: clamp(22px, 3vw, 30px);
+  margin: 0 0 12px;
+}
+
+.feature-text p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .feature-row,
+  .feature-row:nth-child(even) {
     flex-direction: column;
   }
 
-  .content-row {
-    flex-direction: column-reverse;
+  .feature-media,
+  .feature-text {
+    flex-basis: auto;
   }
-}
-
-/* ---------- Slider ---------- */
-
-.slider {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  padding: 6px;
-  max-width: 100%;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-}
-
-.slider::-webkit-scrollbar {
-  height: 8px;
-}
-
-.slider::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 4px;
-}
-
-.slider img {
-  height: min(45vw, 260px);
-  width: auto;
-  border-radius: 16px;
-  box-shadow: var(--card-shadow);
-  scroll-snap-align: center;
-  cursor: zoom-in;
-  flex-shrink: 0;
-  background: var(--surface);
 }
 
 /* ---------- Divider / logo row ---------- */
@@ -387,7 +356,7 @@ h1.title {
 
 /* ---------- Comparison table ---------- */
 
-h2.section-title {
+.section-title {
   text-align: center;
   font-family: 'Charm', cursive;
   font-size: clamp(28px, 4vw, 40px);
@@ -500,6 +469,56 @@ footer.site-footer {
 .footer-copy {
   font-size: 14px;
   text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Legal pages ---------- */
+
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.legal .updated {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0 0 40px;
+}
+
+.legal h2 {
+  font-size: 22px;
+  margin: 36px 0 12px;
+}
+
+.legal h2:first-of-type {
+  margin-top: 0;
+}
+
+.legal p,
+.legal li {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.legal ul,
+.legal ol {
+  padding-left: 20px;
 }
 
 /* ---------- Lightbox ---------- */

@@ -51,7 +51,7 @@ function initLightbox(): void {
     lightboxImg.src = '';
   };
 
-  document.querySelectorAll<HTMLImageElement>('.slider img').forEach((img) => {
+  document.querySelectorAll<HTMLImageElement>('.feature-media img').forEach((img) => {
     img.addEventListener('click', () => open(img.src, img.alt));
   });
 
